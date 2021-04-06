@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Inscription</h1>
+        {% if notification %}
+            <div class="alert alert-info">{{ notification }}</div>
+            <hr>
+        {% endif %}
+        {{ form(form) }} <!-- on injecte la variable form qui est entre parenthèse et qui vient de register controller dans l'objet symfony form -->
+{% endblock %}
