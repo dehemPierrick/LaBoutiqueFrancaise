@@ -35,7 +35,7 @@ class ProductCrudController extends AbstractCrudController
             BooleanField::new('isBest'),
             MoneyField::new('price')
                 ->setCurrency('EUR'),// permet de donner la monnaie courante
-            AssociationField::new('category')
+            AssociationField::new('category')           
         ];
     }
     

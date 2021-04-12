@@ -77,7 +77,7 @@ class OrderCrudController extends AbstractCrudController
         $mail = new Mail();
         $content = "Bonjour ".$order->getUser()->getFirstName()."<br/>La commande ".$order->getReference()." est en cours de préparation.";
         $mail->send($order->getUser()->getEmail(), $order->getUser()->getFirstName(), "Commande ".$order->getReference()." - En cours de préparation.", $content );
-
+        
 
         return $this->redirect($url);
     }
@@ -99,7 +99,7 @@ class OrderCrudController extends AbstractCrudController
         $mail = new Mail();
         $content = "Bonjour ".$order->getUser()->getFirstName()."<br/>La commande ".$order->getReference()." est en cours de livraison.";
         $mail->send($order->getUser()->getEmail(), $order->getUser()->getFirstName(), "Commande ".$order->getReference()." - En cours de livraison.", $content );
-
+        
         return $this->redirect($url);
     }
 
