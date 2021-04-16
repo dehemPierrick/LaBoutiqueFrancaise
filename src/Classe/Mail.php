@@ -8,6 +8,7 @@ class Mail
 {
     // clé API de mailjet 
     private $api_key = "83804d7b2aee68fcec3bba5091aaec86";
+    
     private $api_key_secrets = "034c97f2a35166c9e57466545e040870";
 
     public function send($to_email, $to_name, $subject, $content)
